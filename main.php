@@ -1,5 +1,6 @@
 <?php
 
+include_once ('interfaces/HandlerInterface.php');
 include_once('Reader.php');
 include_once('Handler.php');
 include_once('Writer.php');

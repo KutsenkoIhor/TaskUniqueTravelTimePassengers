@@ -4,7 +4,7 @@
  * This class the main data handler.
  */
 
-class Handler
+class Handler implements HandlerInterface
 {
     private array $data = [];
     private array $arrayToWrite = [['driver_id', 'total_minutes_with_passenger']];
@@ -19,7 +19,7 @@ class Handler
      *     "$idDriver" => [$timePickup => [$timePickup, $timeDropOff], $timePickup => [$timePickup, $timeDropOff]],
      * ]
      */
-    public function set($idDriver, $timePickup, $timeDropOff): void
+    public function set(int $idDriver, int $timePickup, int $timeDropOff): void
     {
         if (array_key_exists($idDriver, $this->data)) {
             if (array_key_exists($timePickup, $this->data[$idDriver])) {

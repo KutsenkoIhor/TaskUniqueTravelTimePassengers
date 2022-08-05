@@ -7,9 +7,9 @@
 
 class Writer
 {
-    private Handler $handler;
+    private HandlerInterface $handler;
 
-    public function  __construct(Handler $handler)
+    public function  __construct(HandlerInterface $handler)
     {
         $this->handler = $handler;
     }
