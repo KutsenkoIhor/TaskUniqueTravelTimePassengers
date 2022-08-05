@@ -1,9 +1,15 @@
-## Migrate + seed
+## Start work
 
 ```sh
-$ php artisan migrate:refresh --seed
+$ git clone https://github.com/KutsenkoIhor/UniqueTravelTime.git
 ```
 
+- #### In the main.php file, specify the file names for reading and saving.
+- PATH_FILE_READ = "trips.csv";
+- PATH_FILE_WRITE = "report.csv";
+```sh
+$ php main.php
+```
 
 ## Task
 
