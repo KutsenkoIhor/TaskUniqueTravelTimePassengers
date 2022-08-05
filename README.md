@@ -7,6 +7,11 @@ $ git clone https://github.com/KutsenkoIhor/UniqueTravelTime.git
 - #### In the main.php file, specify the file names for reading and saving.
 - PATH_FILE_READ = "trips.csv";
 - PATH_FILE_WRITE = "report.csv";
+
+```sh
+$ cd UniqueTravelTime
+```
+
 ```sh
 $ php main.php
 ```
